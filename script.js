@@ -55,11 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
     speedDisplay.textContent = `Wind Speed: ${wind.speed} m/s`
 
     //unlock the display
+    placeholder.classList.add('hidden')
     weatherInfo.classList.remove('hidden')
     errorDisplay.classList.add('hidden')
   }
 
   function showError() {
+    placeholder.classList.add('hidden')
     weatherInfo.classList.add("hidden");
     errorDisplay.classList.remove("hidden");
   }
