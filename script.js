@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const humidityDisplay = document.getElementById("humidity");
   const speedDisplay = document.getElementById("wind-speed");
   const errorDisplay = document.getElementById("error-message");
+  const placeholder = document.getElementById('placeholder')
 
   const API_KEY = "cb11afbca99b59ad1357230ff5b0f44b"; // // NEED To have env variable to hide.. Sensitive info
 
@@ -47,11 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // display
     const {name, main, weather, wind} = data
     cityNameDisplay.textContent = name;
-    tempDisplay.textContent = `Temperature: ${main.temp}`;
-    feelsDisplay.textContent = `Feels Like: ${main.feels_like}`;
+    tempDisplay.textContent = `Temperature: ${main.temp}°C`;
+    feelsDisplay.textContent = `Feels Like: ${main.feels_like}°C`;
     descDisplay.textContent = `Weather: ${weather[0].description.toUpperCase()}`;
-    humidityDisplay.textContent = `Humidity: ${main.humidity}`
-    speedDisplay.textContent = `Wind Speed: ${wind.speed}`
+    humidityDisplay.textContent = `Humidity: ${main.humidity}%`
+    speedDisplay.textContent = `Wind Speed: ${wind.speed} m/s`
 
     //unlock the display
     weatherInfo.classList.remove('hidden')
