@@ -48,4 +48,4 @@ Basic error handling
 Responsive UI design
 
 📸 Preview
-(Add a screenshot here if you have one)
+![preview](image.png)
