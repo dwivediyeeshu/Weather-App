@@ -28,7 +28,7 @@ It fetches real-time weather data for any city using the **OpenWeather API** and
 ## ⚙️ Setup & Usage
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/dwivediyeeshu/Weather-App.git
    cd weather-app
 2. Add your OpenWeather API key in script.js:
 
@@ -48,4 +48,3 @@ Basic error handling
 Responsive UI design
 
 📸 Preview
-(Add a screenshot here if you have one)
